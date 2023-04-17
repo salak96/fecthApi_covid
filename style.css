@@ -64,13 +64,15 @@ button {
 .search {
     display: flex;
     justify-content: center;
-    background-color: orange;
-    border-radius: 5px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    margin-bottom: 0px;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    
 }
 input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 24px;
     padding: 10px;
     border: none;
@@ -81,6 +83,7 @@ input {
 .country{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: flex-start;
     flex-direction: column;
     background-color: #eb4034;
@@ -90,4 +93,24 @@ input {
 .country h2 {
     padding-left: 150px;
 
+}
+/* mobile */
+@media (max-width: 600px) {
+    input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 24px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        margin-right: 10px;
+        flex: 1;
+    }
+    .country h2 {
+        margin-top: 20px;
+        padding-left: 0px;
+       flex-direction: column;
+    }
 }
